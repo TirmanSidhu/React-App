@@ -1,0 +1,122 @@
+@import '../HomePage/Variables.css';
+
+.art {
+  width: 100%;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .pageDots {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 5%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    i {
+      font-size: 40px;
+      font-weight: normal;
+      font-style: normal;
+      font-family: 'Material Icons';
+      cursor: pointer;
+      &:nth-child(2n){
+        margin-left: 50px;
+      }
+    }
+  }
+  .paintingSlider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    .scrollButtons {
+      position: absolute;
+      bottom: 0;
+      right: 5%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .prevButton,
+      .nextButton {
+        height:90px;
+        width:180px;
+        display: flex;
+        flex-direction: center;
+        justify-content: center;
+        align-items: center;
+        i {
+          font-size: 90px;
+          font-weight: normal;
+          font-style: normal;
+          color: white;
+          &:hover {
+            font-size: 120px;
+          }
+          transition: font-size 0.2s linear;
+          &::selection {
+            text-shadow: none;
+            background: none;
+          }
+        }
+        font-family: 'Material Icons';
+        cursor: pointer;
+      }
+      .prevButton {
+        border-radius: 0 0 90px 90px;
+        border-top: 5px solid white;
+        box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.80);
+        &:active {
+          box-shadow: none;
+        }
+      }
+      .nextButton {
+        border-radius: 90px 90px 0 0;
+        box-shadow: 0px -6px 5px -2px rgba(0,0,0,0.70);
+        &:active {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .pageDots {
+      flex-direction: row;
+      bottom: 0;
+      margin: 0 auto;
+      left: 5%;
+      width: 90%;
+      align-items: flex-start;
+      justify-content: space-between;
+      i {
+        font-size: 30px;
+        &:nth-child(2n){
+          margin-left: 0;
+        }
+      }
+    }
+    .paintingSlider .scrollButtons {
+      bottom: 65px;
+      .prevButton,
+      .nextButton {
+        height:50px;
+        width:100px;
+        i {
+          font-size: 50px;
+          &:hover {
+            font-size: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+.isActive {
+    border: 2px solid;
+    border-radius: 50%;
+}

@@ -1,0 +1,80 @@
+@import '../HomePage/Variables.css';
+
+.devIcon {
+    font-family: 'devicons';
+    margin: 30px;
+    font-style: normal;
+    font-size: 60px;
+    color: var(--rust);
+    &:hover {
+        color: #d2bb96;
+        animation-name: rubberBand;
+    }
+    animation-duration: 1.5s;
+}
+
+.github {
+  &::before {
+    content: "\e609";
+  }
+}
+.java {
+  &::before {
+    content: "\e638";
+  }
+}
+.python {
+  &::before {
+    content: "\e63c";
+  }
+}
+.javascript {
+  &::before {
+    content: "\e618";
+  }
+}
+.jquery {
+  &::before {
+    content: "\e650";
+  }
+}
+.sass {
+  &::before {
+    content: "\e64b";
+  }
+}
+.css {
+  &::before {
+    content: "\e649";
+  }
+}
+.html {
+  &::before {
+    content: "\e636";
+  }
+}
+.npm {
+  &::before {
+    content: "\e61e";
+  }
+}
+.android {
+  &::before {
+    content: "\e60e";
+  }
+}
+.react {
+  &::before {
+    content: "\e6ba";
+  }
+}
+.ai {
+  &::before {
+    content: "\e6b4";
+  }
+}
+.ps {
+  &::before {
+    content: "\e69d";
+  }
+}

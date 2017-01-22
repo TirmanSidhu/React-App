@@ -1,0 +1,11 @@
+.socialIcons {
+	img {
+		width: 40px;
+		position: relative;
+		cursor: pointer;
+		&:hover{
+			animation-name: swing;
+			animation-duration: 1s;
+		}
+	}
+}

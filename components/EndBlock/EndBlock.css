@@ -1,0 +1,13 @@
+@import '../HomePage/Variables.css';
+
+.endBlock {
+  background-color: #e5ad9a;
+  width: 100%;
+  z-index: 1000;
+  h1 {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-family: var(--font-fancy);
+  }
+}

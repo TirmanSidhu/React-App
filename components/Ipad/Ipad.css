@@ -1,0 +1,19 @@
+@import '../HomePage/Variables.css';
+
+.ipad {
+	display: flex;
+	width: 220;
+
+	#bezel-2 {
+		fill: lightBlue;
+	}
+	
+	#lock,
+	#camera {
+		fill: var(--tan);
+		cursor: pointer;
+		&:hover {
+			fill: white;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+@import '../HomePage/Variables.css';
+
+.workTout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  img {
+    width: 20%;
+    border-radius: 50%;
+    border: 5px solid;
+    margin: 50px;
+  }
+  .workDescription {
+     margin: 50px;
+     h1 {
+       margin: 0;
+       font-family: var(--font-fancy);
+     }
+     p {
+       font-family: var(--font-prof);
+       margin-left: 50px;
+     }
+  }
+}

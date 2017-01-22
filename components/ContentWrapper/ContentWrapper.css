@@ -1,0 +1,13 @@
+@import '../HomePage/Variables.css';
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  h1 {
+    align-self: center;
+    font-family: var(--font-bubble);
+    color: var(--rust);
+  }
+}

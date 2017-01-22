@@ -1,0 +1,104 @@
+@import '../HomePage/Variables.css';
+
+.ipadContainer {
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 30px 0px 0px 16px;
+	height: 253px;
+	width: 182px;
+
+	h2 {
+		font-family: var(--font-pixel);
+		color: #d2bb96;
+		margin:0;
+		position: relative;
+	}
+	#avatarTirman {
+		height: 140px;
+		width: 140px;
+		position: relative;
+		border-radius: 50%;
+		border: none;
+		animation-timing-function: linear;
+		animation-duration: 1.5s;
+		box-shadow: 0 8px #d2bb96;
+		cursor: pointer;
+		transition: transform 2s linear;
+		&:hover{
+  		box-shadow: 0px 5px #d2bb96;
+  		top: 2px;
+		}
+		&:active {
+			box-shadow: 0px 0px #AB3C3C;
+			top: 5px;
+			transform: rotate(360deg);
+		}
+	}
+}
+.rotate {
+	animation-name: rotate;
+	animation-duration: 1.5s; 
+}
+
+.phonePopup {
+	display: flex;
+	position: absolute;
+	background: white;
+	flex-direction: column;
+	height: 248px;
+	border-radius: 5%;
+	width: 175px;
+	h1 {
+		color: var(--rust);
+		font-family: var(--font-smooth);
+		font-size: 18px;
+		letter-spacing: 1.2px;
+		text-align: center;
+		line-height: 1.5;
+	}
+		img {
+			align-self: center;
+			width: 140 px;
+			margin-top: 10px;
+		}
+	svg {
+		height: 25px;
+		width: 25px;
+		fill: var(--rust);
+		position: absolute;
+		right: 0;
+		cursor: pointer;
+		transition: height 0.5s linear, width 0.5s linear;
+		&:hover {
+			height: 35px;
+			width: 35px;
+		}
+	}
+}
+
+.remove {
+	visibility: hidden;
+	transition: visibility 1s;
+}
+.zoomIn {
+	animation-duration: 1s;
+	animation-name: zoomIn;
+}
+.zoomOut {
+	animation-duration: 1s;
+	animation-name: zoomOut;
+}
+
+.wiggle {
+	animation-name: icons;
+	animation-timing-function: linear;
+	animation-duration: 1.5s;
+}
+
+@keyframes icons {
+		0%,100%  {bottom: 0px;}
+		50%  {bottom: 12px;}
+}

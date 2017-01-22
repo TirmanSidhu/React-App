@@ -1,0 +1,86 @@
+@import '../HomePage/Variables.css';
+
+.skills {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  align-self: center;
+  align-items: center;
+  h3 {
+    width: 60%;
+    font-family: var(--font-pixel);
+    color: var(--rust);
+    text-align: center;
+  }
+  .icons {
+    margin: 30px;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    font-family: var(--font-smooth);
+    background: var(--rust);
+    color: white;
+    border-radius: 3%;
+    &:hover {
+        background-color: #d2bb96;
+        animation-name: rubberBand;
+    }
+    animation-duration: 1.5s;
+  }
+  svg {
+    width: 60px;
+    height: 60px;
+    margin: 30px;
+    display: block;
+    fill: var(--rust);
+    &:hover {
+        fill: #d2bb96;
+        animation-name: rubberBand;
+    }
+    animation-duration: 1.5s;
+  }
+  .opinionGenerator {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    border-bottom: 2px inset #d2bb96;
+    width: 60%;
+    min-width: 250px;
+    margin: 20px;
+    .gear {
+      animation: spin 4s linear infinite;
+      font-family: 'devicons';
+      font-style: normal;
+      font-size: 30px;
+      color: var(--rust);
+      &::before {
+        content: "\e699";
+      }
+    }
+    h3 {
+      font-family: var(--font-pixel);
+      color: var(--rust);
+      margin: 0;
+      margin: 10px;
+      text-align: left;
+    }
+  }
+
+  .skillIcons {
+    width: 60%;
+    min-width: 360px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
+
+@keyframes spin { 100% { transform:rotate(360deg); } }

@@ -1,0 +1,110 @@
+@import '../HomePage/Variables.css';
+
+.aboutPage {
+	width: 100%;
+	padding-top: 50px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 50px 0px;
+	.introContainer {
+		display: flex;
+		margin-bottom: 50px;
+		flex-direction: column;
+		align-items: center;
+		width: 70%;
+		#avatar {
+			width: 30%;
+			min-width: 150px;
+			border-radius: 50%;
+			visibility: hidden;
+		}
+		p {
+			font-size: 20px;
+			font-family: var(--font-pixel);
+			color: var(--rust);
+			text-align: center;
+		}
+		#hi {
+			width: 60px;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			background-color: var(--tan);
+			visibility: hidden;
+		}
+	}
+	.skillContainer {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		.computerMe {
+			width: 20%;
+		}
+		.line {
+			width: 60%;
+			height: 1px;
+			border-top: 5px dashed var(--tan);
+		}
+		.imgScroll {
+			width: 10%;
+			padding-top: 10%;
+			background: url('/SkillsSvgs/skillSlide2.png');
+			background-repeat: repeat;
+			border-radius:100%;
+			background-size: cover;
+			animation-duration: 5s;
+			animation-name: slider;
+			animation-iteration-count: infinite;
+			animation-timing-function: cubic-bezier(1,0,0,1);
+		}
+	}
+	@media screen and (max-width: 720px) {
+		.skillContainer {
+			.computerMe {
+				width: 30%;
+			}
+			.line {
+				width: 40%;
+			}
+			.imgScroll {
+				width: 20%;
+				padding-top: 20%;
+			}
+		}
+	}
+}
+
+@keyframes sideScroll {
+	from { background-position: 0 0; }
+	to { background-position: 136% 0; }
+}
+
+@keyframes slider {
+	0% {
+    background-position: 0 0;
+	}
+	10% {
+	    background-position: 50% 0px;
+	}
+	35% {
+	    background-position: 50% 0px;
+	}
+	40% {
+	    background-position: 99% 0px;
+	}
+	68% {
+	    background-position: 99% 0px;
+	}
+	73% {
+	    background-position: 136% 0px;
+	}
+	100% {
+	    background-position: 136% 0px;
+	}
+}
