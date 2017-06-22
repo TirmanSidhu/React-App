@@ -33,7 +33,7 @@ module.exports = {
 	postcss: function () {
     return [
       require('postcss-cssnext')({ /* ...options */ }),
-      require('precss')({ /* ...options */ })
+      require('precss')({ /* ..options */ })
     ];
   }
 }
